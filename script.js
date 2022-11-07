@@ -69,7 +69,8 @@ function tweetQuote() {
 }
 
 //event listeners
-newQuoteBtn.addEventListener('click', newQuote);
+// newQuoteBtn.addEventListener('click', newQuote);//nacita z API jen jednou, pak z apiQuotes
+newQuoteBtn.addEventListener('click', getQuotes);
 twitterBtn.addEventListener('click', tweetQuote);
 
 // on load
